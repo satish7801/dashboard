@@ -15,19 +15,20 @@
 
     <div class="container2 main">
         <div class="row nav">
-            <div class="col-sm-2 d-flex p-2 border">
+            <div class="col-sm-2 d-flex p-2 ">
                 <img class="menu" src="./images/menu-bar.svg">
                 <img class="cLogo" src="./images/logo.svg">
             </div>
-            <div class="col-sm-8 d-flex border">
+            <div class="col-sm-8 d-flex ">
                 <img class="cSearch" src="./assets2/search.png">
-                <p class="sTitle2 m-10"> Search</p>
+                <p class="sTitle2"> Search</p>
             </div>
-            <div class="col-sm-2 border">
+            <div class="col-sm-2 ">
                 <img class="cBell" src="./images/notification-icon.svg">
                 <img class="cUser" src="./images/profile.png">
-                <span class="uName ">Jhon Doe<span />
+                <span class="uName cArraw">Jhon Doe<span />
                     <img class="cArraw" src="./images/downward-arrow.svg">
+
             </div>
         </div>
         <div class="row">
@@ -83,147 +84,177 @@
                 </div>
                 <div class="row dRow">
                     <div class="col-xs-2 card d-flex">
-
-                        <img class="cIcon d-flex" src="./images/star.svg" alt="">
-                        <span class="cNumber">23,456</span>
-                        <span class="cTitle">New Products</span>
-                    </div>
-                    <div class="col-sm-2 card d-flex">
-                        <img class="cIcon" src="./images/new-product.svg" alt="">
-                        <span class="cNumber">2345</span>
-                        <span class="cTitle">Added Products</span>
-                    </div>
-                    <div class="col-sm-2 card d-flex">
-                        <img class="cIcon" src="./images/total-product.svg" alt="">
-                        <span class="cNumber">32,456</span>
-                        <span class="cTitle">Total Products</span>
-                    </div>
-                    <div class="col-sm-2 card d-flex">
-                        <img class="cIcon" src="./images/dollar-filled.svg" alt="">
-                        <span class="cNumber">5678</span>
-                        <span class="cTitle">Today's Sale</span>
-                    </div>
-                    <div class="col-sm-2 card d-flex">
-                        <img class="cIcon" src="./images/money-bag.svg" alt="">
-                        <span class="cNumber">33,5342</span>
-                        <span class="cTitle">Total Sale</span>
-                    </div>
-                </div>
-                <div class="row dsrow">
-                    <div class=" dataGraph">
-                        <span class="saleTitle">Sale</span>
-                        <a href="#" class="dTime floatingr pieActive">Yearly</a>
-                        <a href="#" class="dTime floatingr ">Monthly</a>
-                        <a href="#" class="dTime floatingr ">Weekly</a>
-
-
-                        <img class="graphImg floatingl" src="./images/data-graph.png">
-
-
-                    </div>
-                    <div class=" pieContainer">
-                        <p class="pieTitle">Sales by Country</p>
-                        <img class="pieimage" src="./images/pie-chart.svg">
-                        <div class="row cBox">
-                            <div class="col"><span class="dot1"></span>United States of America</div>
-                            <div class="col"><span class="dot2"></span>Canada</div>
-                        </div>
-                        <div class="row cBox">
-                            <div class="col"><span class="dot3"></span>Russia</div>
-                            <div class="col"><span class="dot4"></span>India</div>
+                        <div class="row">
+                            <div class="col leftCard">
+                                <img class="cIcon d-flex" src="./images/star.svg" alt="">
+                            </div>
+                            <div class="col rightCard">
+                                <span class="cNumber">23,456</span>
+                                <span class="cTitle">New Products</span>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-xs-2 card d-flex">
+                        <div class="row">
+                            <div class="col leftCard">
+                                <img class="cIcon d-flex" src="./images/new-product.svg" alt="">
+                            </div>
+                            <div class="col rightCard">
+                                <span class="cNumber">2345</span>
+                                <span class="cTitle">Added Products</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 card d-flex">
+                        <div class="row">
+                            <div class="col leftCard">
+                                <img class="cIcon d-flex" src="./images/total-product.svg" alt="">
+                            </div>
+                            <div class="col rightCard">
+                                <span class="cNumber">32,456</span>
+                                <span class="cTitle">Total Products</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 card d-flex">
+                        <div class="row">
+                            <div class="col leftCard">
+                                <img class="cIcon d-flex" src="./images/dollar-filled.svg" alt="">
+                            </div>
+                            <div class="col rightCard">
+                                <span class="cNumber">5678</span>
+                                <span class="cTitle">Today's Sale</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-2 card d-flex">
+                        <div class="row">
+                            <div class="col leftCard">
+                                <img class="cIcon d-flex" src="./images/money-bag.svg" alt="">
+                            </div>
+                            <div class="col rightCard">
+                                <span class="cNumber">33,5342</span>
+                                <span class="cTitle">Total Sale</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row dsrow">
+                        <div class=" dataGraph">
+                            <span class="saleTitle">Sale</span>
+                            <a href="#" class="dTime floatingr pieActive">Yearly</a>
+                            <a href="#" class="dTime floatingr ">Monthly</a>
+                            <a href="#" class="dTime floatingr ">Weekly</a>
+
+
+                            <img class="graphImg floatingl" src="./images/data-graph.png">
+
+
+                        </div>
+                        <div class=" pieContainer">
+                            <p class="pieTitle">Sales by Country</p>
+                            <img class="pieimage" src="./images/pie-chart.svg">
+                            <div class="row cBox">
+                                <div class="col"><span class="dot1"></span>United States of America</div>
+                                <div class="col"><span class="dot2"></span>Canada</div>
+                            </div>
+                            <div class="row cBox">
+                                <div class="col"><span class="dot3"></span>Russia</div>
+                                <div class="col"><span class="dot4"></span>India</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <span class="saleTitle invoice">Invoices</span>
+                        <span class="view ">View All</span>
+                    </div>
+                    <table class="invoiceTable">
+                        <tr>
+                            <th class="tableTitle">INVOICE</th>
+                            <th class="tableTitle">COMPANY NAME</th>
+                            <th class="tableTitle">EMAIL</th>
+                            <th class="tableTitle">DUE DATE</th>
+                            <th class="tableTitle">STATUS</th>
+                            <th class="tableTitle">AMOUNT</th>
+                        </tr>
+                        <tr>
+                            <td class="tableData">651535</td>
+                            <td class="tableData">Public Adjusting Firm</td>
+                            <td class="tableData">georgia.young@example.com</td>
+                            <td class="tableData">24 May, 2020</td>
+                            <td class="tableData "><span class="paid">Paid</span></td>
+                            <td class="tableData">$47,800</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">558612</td>
+                            <td class="tableData">Other</td>
+                            <td class="tableData">jessica.hanson@example.com</td>
+                            <td class="tableData">24 May, 2020</td>
+                            <td class="tableData "><span class="paid">Paid</span></td>
+                            <td class="tableData">$98,000</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">558612</td>
+                            <td class="tableData">Vendor</td>
+                            <td class="tableData">alma.lawson@example.com</td>
+                            <td class="tableData">8 Sep, 2020</td>
+                            <td class="tableData "><span class="paid">Paid</span></td>
+                            <td class="tableData">$20,900</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">558612</td>
+                            <td class="tableData">Property Management Company</td>
+                            <td class="tableData">kenzi.lawson@example.com</td>
+                            <td class="tableData">22 Oct, 2020</td>
+                            <td class="tableData "><span class="paid">Paid</span></td>
+                            <td class="tableData">$10,570</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">651535</td>
+                            <td class="tableData">Subcontractor Company</td>
+                            <td class="tableData">jackson.graham@example.com</td>
+                            <td class="tableData">1 Feb, 2020</td>
+                            <td class="tableData  "><span class="failed">Failed</span></td>
+                            <td class="tableData">$10,200</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">653518</td>
+                            <td class="tableData">Mortgage Company</td>
+                            <td class="tableData">felicia.reid@example.com</td>
+                            <td class="tableData">22 Oct, 2020</td>
+                            <td class="tableData "><span class="pending">Pending</span></td>
+                            <td class="tableData">$12,600</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">487441</td>
+                            <td class="tableData">TPA</td>
+                            <td class="tableData">dolores.chambers@example.com</td>
+                            <td class="tableData">21 Sep, 2020</td>
+                            <td class="tableData "><span class="paid">Paid</span></td>
+                            <td class="tableData">$11,170</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">267400</td>
+                            <td class="tableData">Fire Department</td>
+                            <td class="tableData">nevaeh.simmons@example.com</td>
+                            <td class="tableData">17 Oct, 2020</td>
+                            <td class="tableData "><span class="failed">Failed</span></td>
+                            <td class="tableData">$28,000</td>
+                        </tr>
+                        <tr>
+                            <td class="tableData">449003</td>
+                            <td class="tableData">Insurance Carrier</td>
+                            <td class="tableData">curtis.weaver@example.com</td>
+                            <td class="tableData">21 Sep, 2020</td>
+                            <td class="tableData "><span class="paid">Paid</span></td>
+                            <td class="tableData">$10,000</td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="row">
-                    <span class="saleTitle invoice">Invoices</span>
-                    <span class="view ">View All</span>
-                </div>
-                <table class="invoiceTable">
-                    <tr>
-                        <th class="tableTitle">INVOICE</th>
-                        <th class="tableTitle">COMPANY NAME</th>
-                        <th class="tableTitle">EMAIL</th>
-                        <th class="tableTitle">DUE DATE</th>
-                        <th class="tableTitle">AMOUNT</th>
-                        <th class="tableTitle">AMOUNT</th>
-                    </tr>
-                    <tr>
-                        <td class="tableData">651535</td>
-                        <td class="tableData">Public Adjusting Firm</td>
-                        <td class="tableData">georgia.young@example.com</td>
-                        <td class="tableData">24 May, 2020</td>
-                        <td class="tableData">Paid</td>
-                        <td class="tableData">$47,800</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">558612</td>
-                        <td class="tableData">Other</td>
-                        <td class="tableData">jessica.hanson@example.com</td>
-                        <td class="tableData">24 May, 2020</td>
-                        <td class="tableData">Paid</td>
-                        <td class="tableData">$98,000</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">558612</td>
-                        <td class="tableData">Vendor</td>
-                        <td class="tableData">alma.lawson@example.com</td>
-                        <td class="tableData">8 Sep, 2020</td>
-                        <td class="tableData">Paid</td>
-                        <td class="tableData">$20,900</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">558612</td>
-                        <td class="tableData">Property Management Company</td>
-                        <td class="tableData">kenzi.lawson@example.com</td>
-                        <td class="tableData">22 Oct, 2020</td>
-                        <td class="tableData">Paid</td>
-                        <td class="tableData">$10,570</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">651535</td>
-                        <td class="tableData">Subcontractor Company</td>
-                        <td class="tableData">jackson.graham@example.com</td>
-                        <td class="tableData">1 Feb, 2020</td>
-                        <td class="tableData">Failed</td>
-                        <td class="tableData">$10,200</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">653518</td>
-                        <td class="tableData">Mortgage Company</td>
-                        <td class="tableData">felicia.reid@example.com</td>
-                        <td class="tableData">22 Oct, 2020</td>
-                        <td class="tableData">Pending</td>
-                        <td class="tableData">$12,600</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">487441</td>
-                        <td class="tableData">TPA</td>
-                        <td class="tableData">dolores.chambers@example.com</td>
-                        <td class="tableData">21 Sep, 2020</td>
-                        <td class="tableData">Paid</td>
-                        <td class="tableData">$11,170</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">267400</td>
-                        <td class="tableData">Fire Department</td>
-                        <td class="tableData">nevaeh.simmons@example.com</td>
-                        <td class="tableData">17 Oct, 2020</td>
-                        <td class="tableData">Failed</td>
-                        <td class="tableData">$28,000</td>
-                    </tr>
-                    <tr>
-                        <td class="tableData">449003</td>
-                        <td class="tableData">Insurance Carrier</td>
-                        <td class="tableData">curtis.weaver@example.com</td>
-                        <td class="tableData">21 Sep, 2020</td>
-                        <td class="tableData">Paid</td>
-                        <td class="tableData">$10,000</td>
-                    </tr>
-                </table>
+
             </div>
-
         </div>
-    </div>
 
 </body>
 
