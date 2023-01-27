@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+*body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container2 {
+  width: 100%;
+  border: none;
+}
+.main {
+  width: 100%;
+}
+.nav {
+  height: 80px;
+}
+.menu {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+.cLogo {
+  margin-left: 20px;
+  width: 155px;
+  height: 40px;
+}
+.cSearch {
+  width: 15.59px;
+  height: 15.59px;
+  margin: auto 14.74px auto 20px;
+  text-align: left;
+  font: normal normal normal 16px/21px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+}
+.sTttle2 {
+  align-items: center;
+}
+.cBell {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 22px;
+  height: 22px;
+}
+.cUser {
+  margin-left: 53px;
+  margin-top: 18px;
+}
+.uName {
+  margin-left: 15px;
+  text-align: left;
+  font: normal normal normal 16px/21px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 25px;
+  width: fit-content;
+}
+.cArraw {
+  margin-left: 5px;
+}
+.menu2 {
+ 
+}
+
+.left > a {
+  margin-left: auto;
+  margin-right: auto;
+  width: 183px;
+  height: 43px;
+  padding: 0px;
+  text-decoration: none;
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.left > a:active {
+  background: #fff3f4 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+
+.left > a:visited > span {
+  color: black;
+}
+
+.left > a:active > span {
+  color: red;
+}
+
+.sidebarMenu {
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px;
+}
+.sidebarTitle {
+  text-align: left;
+  font: normal normal medium 30px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  margin-bottom: auto;
+  margin-top: auto;
+  
+}
+.activeBack {
+  background: #fff3f4 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+.activeTitle {
+  color: red;
+}
+.rDown {
+  background: #fafafa 0% 0% no-repeat padding-box;
+  border: 1px solid black;
+}
+.dTitle {
+  margin-top: 15px;
+  margin-left: 20px;
+  text-align: left;
+  font:  30px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  font-style: bold;
+}
+.dRow {
+  justify-content: space-evenly;
+}
+.card {
+  width: 220px;
+  height: 116px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+}
+.cIcon {
+  width: 30px;
+  height: 30px;
+}
+.cNumber {
+  font-size: 25px;
+}
+.cTitle {
+  font-size: 15px;
+}
+
+.dsrow {
+  margin-top: 20px;
+  justify-content: space-around;
+}
+.dataGraph {
+  width: 802px;
+  height: 450px;
+  margin-left: 60px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+.saleTitle{
+  font: 29px Roboto;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  font-style: bold;
+  
+}
+
+.dataGraph > a {
+  margin: 0px;
+  padding: 0px;
+  width: fit-content;
+  text-decoration: none;
+  justify-content: flex-end;
+  margin-right: 10px;
+  color: #adadad;
+}
+.dataGraph > a:active {
+  text-decoration: underline solid red;
+  color: red;
+  
+}
+.pieActive{
+  color: red;
+  text-decoration: underline solid red;
+}
+.graphImg {
+  margin-top: 50px;
+}
+.floatingl {
+  float: left;
+}
+.floatingr {
+  float: right;
+}
+.pieContainer {
+  width: 400px;
+  height: 450px;
+  margin-left: 50px;
+  margin-right: 180px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+  
+}
+.pieTitle {
+  text-align: left;
+  font:  29px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  max-width: fit-content;
+}
+.pieimage {
+  height: 300px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cBox{
+  width: 440px;
+  padding: 0px;
+  margin:10px;
+}
+
+.dot1 {
+  height: 15px;
+  width: 15px;
+  background-color: #c8242f;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot2 {
+  height: 15px;
+  width: 15px;
+  background-color: #a2b86c;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot3 {
+  height: 15px;
+  width: 15px;
+  background-color: #f16c20;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot4 {
+  height: 15px;
+  width: 15px;
+  background-color: #ebc844;
+  border-radius: 50%;
+  display: inline-block;
+}
+.cBox .col span {
+  text-align: left;
+  font:  15px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  margin-right: 10px;
+}
+.invoice{
+  float: left;
+  width: fit-content;
+  margin-left: 30px;
+}
+.view{
+  width: fit-content;
+  color: red;
+  margin-left: auto;
+  margin-right: 30px;
+  font-size: 18px;
+}
+.invoiceTable{
+  width: 100%;
+  margin: 20px;
+}
+
+.invoiceTable > tr > th{
+  text-align: left;
+font:  15px Roboto;
+letter-spacing: 1.5px;
+color: #ADADAD;
+}
