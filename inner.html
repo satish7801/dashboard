@@ -7,7 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="./css/inner.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
 
 </head>
 
@@ -26,13 +35,13 @@
             <div class="col thirdPart ">
                 <img class="cBell" src="./images/notification-icon.svg">
                 <img class="cUser" src="./images/profile.png">
-                <span class="uName ">Jhon Doe<span/>
-                <img class="cArraw" src="./images/downward-arrow.svg">
+                <span class="uName ">Jhon Doe<span />
+                    <img class="cArraw" src="./images/downward-arrow.svg">
             </div>
         </div>
-        <div class="row">
+        <div class="row d-flex flex-row">
 
-            <div class="col-2 menu2">
+            <div class="menu2">
                 <div class="row left">
                     <a href="#" class="menuOption d-flex text-center activeBack">
                         <img class="sidebarMenu d-flex " src="./images/dashboard-active.svg" alt="Dashboard">
@@ -56,29 +65,123 @@
                         <img class="sidebarMenu" src="./images/clock-default.svg" alt="History">
                         <span class="sidebarTitle">History</span>
                     </a>
-                    <div class="row left">
-                        <a href="#" class="menuOption d-flex text-center">
-                            <img class="sidebarMenu" src="./images/user-default.svg" alt="Users">
-                            <span class="sidebarTitle">Users</span>
-                        </a>
-                    </div>
-                    <div class="row left">
-                        <a href="#" class="menuOption d-flex text-center">
-                            <img class="sidebarMenu" src="./images/maintenance-default.svg" alt="Maintenance">
-                            <span class="sidebarTitle">Maintenance</span>
-                        </a>
-                    </div>
-                    <div class="row left">
-                        <a href="#" class="menuOption d-flex text-center">
-                            <img class="sidebarMenu" src="./images/setting-default.svg" alt="Setting">
-                            <span class="sidebarTitle">Setting<span />
-                        </a>
-                    </div>
+                </div>
+                <div class="row left">
+                    <a href="#" class="menuOption d-flex text-center">
+                        <img class="sidebarMenu" src="./images/user-default.svg" alt="History">
+                        <span class="sidebarTitle">Users</span>
+                    </a>
+                </div>
+                <div class="row left">
+                    <a href="#" class="menuOption d-flex text-center">
+                        <img class="sidebarMenu" src="./images/maintenance-default.svg" alt="Maintenance">
+                        <span class="sidebarTitle">Maintenance</span>
+                    </a>
+                </div>
+                <div class="row left">
+                    <a href="#" class="menuOption d-flex text-center">
+                        <img class="sidebarMenu" src="./images/setting-default.svg" alt="Setting">
+                        <span class="sidebarTitle">Setting</span>
+                    </a>
                 </div>
             </div>
-            <div class="col rDown">
+            <div class="rDown">
                 <div class="row">
-                    <p class="dTitle">One Column</p>
+                    <p class="dTitle">Analysis</p>
+                </div>
+
+                <div class="rightPart">
+                    <div class="row">
+                        <p class="column">One Column</p>
+                    </div>
+
+                    <input class="fUName oneColumn" placeholder="Name">
+                    <select name="dropdown" class="oneColumn">
+                        <option class="firstDropDown" value="dropdown">Dropdown</option>
+                    </select>
+
+                    <textarea class="oneColumn multiLine" name="message" rows="3" cols="30">Multiple line</textarea>
+
+                    <p class="column column2">Two Column</p>
+
+                    <div class="d-flex flex-row two-column-row">
+                        <div class="two-column-left">
+                            <input class="fUName twoColumn" placeholder="Name">
+                        </div>
+                        <div class="two-column-right">
+                            <div class="did-floating-label-content">
+                                <input class="twoColumn form-control did-floating-input two-field" type="text"
+                                    placeholder="">
+                                <label class="did-floating-label">User Name</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two-column-row d-flex flex-row">
+                        <div class="two-column-left">
+                            <input class="fUName twoColumn" placeholder="Password" type="password">
+                        </div>
+                        <div class="two-column-right">
+                            <select name="dropdown" class="twoColumn">
+                                <option class="firstDropDown" value="dropdown">Dropdown</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="column column3">Three Column</p>
+
+                    <div class="d-flex flex-row three-column-row">
+                        <div class="did-floating-label-content three-column-right">
+                            <input class="threeColumn form-control did-floating-input two-field" type="text"
+                                placeholder="">
+                            <label class="did-floating-label2">Focus</label>
+                        </div>
+                        <div class="did-floating-label-content three-column-left">
+                            <input class="threeColumn form-control did-floating-input two-field" type="text"
+                                placeholder="">
+                            <label class="did-floating-label2">Password</label>
+                        </div>
+                        <div class="did-floating-label-content three-column-left">
+                            <input class="threeColumn form-control disabled-field did-floating-input two-field"
+                                type="text" placeholder="jhondoe">
+                            <label class="did-floating-label2">Disabled</label>
+                        </div>
+                    </div>
+
+                    <p class="column column3">Four Column</p>
+
+                    <div class="d-flex flex-row four-column-row">
+                        <div class="did-floating-label-content four-column-left">
+                            <input class="fourColumn red-border form-control did-floating-input " type="text"
+                                placeholder="UI Designer">
+                            <label class="did-floating-label l3 l3-red">Designation</label>
+                        </div>
+                        <div class="four-column-right">
+                            <input type="text" placeholder="Name" class="fourColumn">
+                        </div>
+                        <div class="did-floating-label-content four-column-right">
+                            <input class="fourColumn form-control did-floating-input two-field" type="text"
+                                placeholder="jhondoe">
+                            <label class="did-floating-label l3">Username</label>
+                        </div>
+                        <div class="four-column-right">
+                            <select name="dropdown" class="fourColumn">
+                                <option class="firstDropDown" value="dropdown">Dropdown</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex">
+                        <p class="red">Enter Valid data</p>
+                        <p class="red">Enter your full Name as per ID</p>
+                    </div>
+
+                    <p class="column other-element">Other Design Elements</p>
+
 
                 </div>
-                </div>
+
+
+
+
+            </div>
