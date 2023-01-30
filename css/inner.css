@@ -1,18 +1,176 @@
-.oneColumn{
-    width: 100%;
-    margin-top: 10px;
-    padding-left: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    border-radius: 5px;
-    border: 1px solid #ADADAD;
-    
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+
+.rightPart {
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+.column {
+  text-align: left;
+  font-size: 22px;
+  font-family: Roboto;
+
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  margin-top: 22.52px;
+  margin-left: 29px;
+  margin-bottom: 15px;
 }
 
-.firstDropDown{
-    color: #ADADAD;
+.did-floating-label-content {
+  position: relative;
+  margin-bottom: 20px;
 }
-.dropdown{
-    color: #ADADAD;
+
+.did-floating-label {
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 11px;
+  padding: 0 5px;
+  background: #fff;
 }
+
+.did-floating-input:not(:placeholder-shown) ~ .did-floating-label {
+  top: -8px;
+  font-size: 13px;
+}
+
+.oneColumn {
+  width: 1122px;
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-radius: 5px;
+  border: 1px solid #adadad;
+  font-size: 18px;
+  margin-left: 30.5px;
+  margin-right: 30.5px;
+}
+
+.two-column-row {
+  width: 1122px;
+  margin-left: 30.5px;
+}
+
+.firstDropDown {
+  color: #adadad;
+}
+.fUName {
+  color: #adadad;
+}
+
+.multiLine {
+  color: #adadad;
+}
+.column2 {
+  margin-top: 44px;
+  margin-bottom: 16px;
+}
+.two-column-left {
+  width: 561px;
+  padding-right: 30px;
+}
+.two-column-right {
+  width: 561px;
+}
+
+.twoColumn {
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 1px solid #adadad;
+  font-size: 18px;
+  margin-right: 30.5px;
+  height: 49px;
+}
+
+.column3 {
+  margin-top: 44px;
+  margin-bottom: 17.98px;
+}
+.three-column-row {
+  width: 1122px;
+  height: 59px;
+  margin-left: 30.5px;
+}
+.three-column-right {
+  width: 364px;
+}
+.three-column-left {
+  width: 364px;
+  margin-left: 31px;
+}
+.did-floating-label2 {
+  font-size: 13px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 15px;
+  top: 1px;
+  padding: 0 5px;
+  background: #fff;
+}
+
+.threeColumn {
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 1px solid #adadad;
+  font-size: 18px;
+  margin-right: 30.5px;
+  height: 49px;
+}
+.column4 {
+  margin-top: 47px;
+  margin-bottom: 19.98px;
+}
+.four-column-row {
+  width: 1122px;
+  height: 59px;
+  margin-left: 30.5px;
+}
+.fourColumn {
+    width: 100%;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  height: 47px;
+}
+.four-column-right{
+    width: 266px;
+    margin-left: 31px;
+}
+.four-column-left{
+    width: 266px;
+}
+.l3{
+    top: -8px; 
+}
+.l3-red{
+    color: red;
+}
+.red{
+    font: normal normal normal 12px/16px Roboto;
+letter-spacing: 0px;
+color: #FF3B3B;
+}
+.red-border{
+    border: 1px solid #FF3C3C;
+    border-radius: 5px;
+}
+.other-element {
+    margin-top: 47px;
+    margin-bottom: 19.98px;
+  }
