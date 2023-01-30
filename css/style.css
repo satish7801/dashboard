@@ -49,13 +49,12 @@
   height: 15.59px;
   margin: auto 14.74px auto 20px;
   text-align: left;
-  font: normal normal normal 16px/21px Roboto;
   letter-spacing: 0px;
-  color: #000000;
-  font-family: 'Times New Roman', Times, serif;
 }
-.sTttle2 {
-  align-items: center;
+.sTitle2 {
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .cBell {
   margin-top: auto;
@@ -135,6 +134,7 @@
   color: red;
 }
 .rDown {
+  max-width: 81%;
   background: #fafafa 0% 0% no-repeat padding-box;
   border: 1px solid black;
 }
@@ -298,7 +298,7 @@
   font-size: 18px;
 }
 .invoiceTable{
-  width: 100%;
+  width: 95%;
   margin: 20px;
 }
 
@@ -308,3 +308,17 @@ font:  15px Roboto;
 letter-spacing: 1.5px;
 color: #ADADAD;
 }
+
+.paid{
+  background: #EBFFEF 0% 0% no-repeat padding-box;
+  border-radius: 5px;
+  text-align: left;
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 0px;
+  color: #3CDD5F;;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
