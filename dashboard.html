@@ -57,15 +57,15 @@
 
             <div class="menu2" id="main-menu-toggle">
                 <div class="row left">
-                    <a href="#" class="menuOption d-flex text-center activeBack">
-                        <img class="sidebarMenu d-flex " src="./images/dashboard-active.svg" alt="Dashboard">
-                        <span class="sidebarTitle d-flex activeTitle">Dashboard</span>
+                    <a href="#" class="menuOption d-flex text-center" aria-checked="true" autofocus>
+                        <img class="sidebarMenu d-flex " src="./images/dashboard-default.svg" alt="Dashboard">
+                        <span class="sidebarTitle">Dashboard</span>
                     </a>
                 </div>
                 <div class="row left">
                     <a href="#" class="menuOption d-flex text-center">
                         <img class="sidebarMenu d-flex" src="./images/graph-default.svg" alt="Analysis">
-                        <span class="sidebarTitle d-flex">Analysis</span>
+                        <span class="sidebarTitle ">Analysis</span>
                     </a>
                 </div>
                 <div class="row left">
@@ -105,7 +105,7 @@
 
                 </div>
                 <div class="d-flex dRow">
-                    <div class=" card d-flex flex-row">
+                    <div class=" card d-flex flex-row flex-wrap">
                         <img class="cIcon" src="./images/star.svg" alt="">
                         <div class="rightCard">
                             <p class="cNumber">23,456</p>
@@ -153,35 +153,38 @@
 
 
                     <div class="row dsrow">
-                        <div class="col dataGraph">
+                        <div class="col dataGraph floatingl">
                             <span class="saleTitle">Sale</span>
-                            <a href="#" class="dTime floatingr pieActive">Yearly</a>
+                            <a href="#" class="dTime floatingr datagraphActive">Yearly</a>
                             <a href="#" class="dTime floatingr ">Monthly</a>
                             <a href="#" class="dTime floatingr ">Weekly</a>
 
 
-                            <img class="graphImg floatingl" src="./images/data-graph.png">
+                            <img class="graphImg" src="./images/data-graph.png">
 
 
                         </div>
                         <div class="col pieContainer">
                             <p class="pieTitle">Sales by Country</p>
+                            <div class="d-flex">
                             <img class="pieimage" src="./images/pie-chart.svg">
+                        
                             <div class="row cBox">
-                                <div class="col"><span class="dot1"></span>United States of America</div>
-                                <div class="col"><span class="dot2"></span>Canada</div>
+                                <div class="col p-0"><span class="dot1"></span>United States of America</div>
+                                <div class="col p-0 first-country"><span class="dot2"></span>Canada</div>
                             </div>
-                            <div class="row cBox">
-                                <div class="col"><span class="dot3"></span>Russia</div>
-                                <div class="col"><span class="dot4"></span>India</div>
+                            <div class="row cBox cBox2">
+                                <div class="col p-0"><span class="dot3"></span>Russia</div>
+                                <div class="col p-0 first-country"><span class="dot4"></span>India</div>
                             </div>
+                        </div>
                         </div>
                     </div>
                     <div class="row">
                         <span class="saleTitle invoice">Invoices</span>
                         <span class="view ">View All</span>
                     </div>
-                    <table class="invoiceTable">
+                    <table class="invoiceTable overflow-scroll">
                         <tr>
                             <th class="tableTitle">INVOICE</th>
                             <th class="tableTitle">COMPANY NAME</th>

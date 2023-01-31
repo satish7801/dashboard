@@ -27,7 +27,6 @@
   padding: 0px;
 }
 
-
 .thirdPart {
   justify-content: flex-end;
   max-width: 275px;
@@ -87,6 +86,12 @@
 .menu2 {
   max-width: 15.52%;
 }
+.menuOption {
+  padding: 0px;
+}
+.left {
+  padding: 0px;
+}
 
 .left > a {
   margin-left: auto;
@@ -97,19 +102,21 @@
   text-decoration: none;
   margin-top: 20px;
   padding-left: 20px;
+  border: none;
 }
 
-.left > a:hover {
+.left > a:focus {
   background: #fff3f4 0% 0% no-repeat padding-box;
   border-radius: 5px;
 }
 
-.left > a:hover > span {
+.left > a:focus > span {
   color: red;
 }
 
-.left > a:active > span {
-  color: red;
+a:focus > .sidebarMenu {
+  filter: invert(26%) sepia(74%) saturate(2321%) hue-rotate(337deg)
+    brightness(78%) contrast(103%);
 }
 
 .sidebarMenu {
@@ -129,18 +136,12 @@
   margin-bottom: auto;
   margin-top: auto;
 }
-.activeBack {
-  background: #fff3f4 0% 0% no-repeat padding-box;
-  border-radius: 5px;
-}
-.activeTitle {
-  color: red;
-}
+
 .rDown {
   max-width: 84.48%;
-  background: #fafafa 0% 0% no-repeat padding-box;
+  background: #1d1a1a 0% 0% no-repeat padding-box;
+  /* background: #fafafa 0% 0% no-repeat padding-box; */
   padding: 0px;
-
 }
 .dTitle {
   margin-top: 15px;
@@ -155,13 +156,10 @@
   justify-content: space-evenly;
 }
 .leftCard {
- 
 }
 .rightCard {
-  
 }
 .card {
-  
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 5px;
   border: none;
@@ -171,7 +169,6 @@
   width: 219px;
   height: 116px;
   margin: 0 15px;
-
 }
 .cIcon {
   width: 33px;
@@ -181,7 +178,7 @@
   font: normal normal medium 25px/33px Roboto;
   font-weight: 500;
   letter-spacing: 0px;
-  
+
   text-align: left;
   letter-spacing: 0px;
   color: #3e3e3e;
@@ -192,12 +189,11 @@
 
 .dsrow {
   margin-top: 20px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .dataGraph {
-  width: 802px;
+  max-width: 802px;
   height: 400px;
-  
   background: #ffffff 0% 0% no-repeat padding-box;
   border-radius: 5px;
 }
@@ -211,7 +207,7 @@
 
 .dataGraph > a {
   margin: 0px;
-  padding: 0px;
+  padding: 8.9px;
 
   text-decoration: none;
   justify-content: flex-end;
@@ -222,13 +218,14 @@
   text-decoration: underline solid red;
   color: red;
 }
-.pieActive {
+.datagraphActive {
   color: red;
   text-decoration: underline solid red;
 }
 .graphImg {
-  height: 300px;
-  width: 800px;
+  margin-left: 20px;
+  max-height: 300px;
+  max-width: 800px;
 }
 .floatingl {
   float: left;
@@ -237,14 +234,15 @@
   float: right;
 }
 .pieContainer {
-  width: 385px;
+  padding: 0px;
+  max-width: 385px;
   height: 398px;
-  border: 1px solid black;
   border-radius: 5px;
   background-color: white;
   margin-bottom: 20px;
 }
 .pieTitle {
+  margin-left: 29px;
   text-align: left;
   font: 29px Roboto;
   letter-spacing: 0px;
@@ -254,12 +252,21 @@
 .pieimage {
   height: 200px;
   width: 210px;
+  margin-left: 75px;
 }
 
 .cBox {
-  width: 440px;
+  margin-left: 49px;
+  margin-top: 27px;
+  max-width: 385px;
   padding: 0px;
-  margin: 10px;
+}
+.cBox2 {
+  margin-top: 18px;
+}
+
+.first-country {
+  max-width: 130px;
 }
 
 .dot1 {
@@ -362,8 +369,47 @@
   padding-bottom: 5px;
 }
 
-@media screen and (max-width:820) {
-  .menu2{}
-  
+/* media query */
+
+@media screen and (max-width: 1450px) {
+  .graphImg {
+    width: 583px;
+    height: 250px;
+    margin-left: 10px ;
+  }
+  .dataGraph{
+    max-width: 630px;
+  }
   
 }
+@media screen and (max-width: 1200px) {
+  .graphImg {
+    width: 466px;
+    height: 200px;
+  }
+  .dataGraph{
+    max-width: 550px;
+  }
+  
+}
+@media screen and (max-width: 1120px) {
+  .graphImg {
+    width: 700px;
+    height: 300px;
+  }
+  .dataGraph{
+    max-width: 802px;
+  }
+  .pieContainer{
+    margin-top: 20px;
+    max-width: 800px;
+  }
+  .cBox{
+    display: flex;
+    flex-direction: row;
+
+  }
+  
+}
+
+

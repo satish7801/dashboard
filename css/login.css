@@ -15,6 +15,7 @@ body {
 }
 
 .main {
+    width: 100%;
     display: flex;
 }
 
@@ -27,8 +28,8 @@ body {
     float: left;
     margin-top: 72px;
     margin-left: 137px;
-    width: 576px;
-    height: 576px;
+    max-width: 576px;
+    max-height: 576px;
     border-radius: 50%;
     border: 20px solid white;
     box-shadow: 0px 4px 31px #0000000a;
@@ -163,6 +164,20 @@ body {
     font-size: 15px;
 }
 
+/* media query */
+
+/* @media screen and (max-width: 1000px){
+    .left{
+        width: 400px;
+    }  
+    .right{
+        
+    } 
+    .hero{
+            height: 300px;
+            width: 300px;
+       } 
+} */
 
 @media screen and (max-width: 700px){
 
