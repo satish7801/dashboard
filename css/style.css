@@ -249,6 +249,14 @@ a:focus > .sidebarMenu {
   color: #3e3e3e;
   max-width: fit-content;
 }
+.pie-part{
+  flex-direction: column;
+}
+.pie-part > .row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .pieimage {
   height: 200px;
   width: 210px;
@@ -404,11 +412,15 @@ a:focus > .sidebarMenu {
     margin-top: 20px;
     max-width: 800px;
   }
-  .cBox{
-    display: flex;
+  .pie-part{
     flex-direction: row;
-
   }
+
+  .pie-part> .row {
+    display: flex;
+    flex-direction: column;
+  }
+
   
 }
 
