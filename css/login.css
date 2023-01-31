@@ -1,0 +1,195 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: #FAFAFA 0% 0% no-repeat padding-box;
+    position: relative;
+    width: 1560px;
+    height: 720px;
+
+}
+
+.main {
+    display: flex;
+}
+
+.left {
+    width: 906px;
+}
+
+.hero {
+
+    float: left;
+    margin-top: 72px;
+    margin-left: 137px;
+    width: 576px;
+    height: 576px;
+    border-radius: 50%;
+    border: 20px solid white;
+    box-shadow: 0px 4px 31px #0000000a;
+}
+
+.right {
+    float: left;
+
+}
+
+.logo {
+
+    margin-top: 106px;
+    width: 272px;
+    height: 58px;
+
+
+}
+
+.para {
+    margin-top: 19.17px;
+
+
+
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.para2 {
+
+    width: 500px;
+
+
+    text-align: left;
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.red {
+
+    color:  #c4282f;
+    font-family: 'Roboto';
+    font-weight: 1000;
+    
+}
+
+.sPara {
+    margin-top: 31.87px;
+    height: 33px;
+    font-size: 25px;
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.uInput {
+    margin-top: 23.45px;
+    padding-top: 14.63px;
+    padding-left: 14.5px;
+    padding-bottom: 14.37px;
+    display: block;
+    width: 419px;
+    font-size: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #ADADAD;
+
+    border-radius: 4.5px;
+
+}
+
+.sMain {
+    width: 429px;
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.btn {
+
+    margin-top: 30.5px;
+    width: 138px;
+    height: 45px;
+
+    background: #C8242F 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    font-size: 18px;
+    color: white;
+    border: none;
+
+}
+
+.fPass {
+    display: inline;
+    margin-top: 42.63px;
+    text-align: right;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    font-size: 15px;
+}
+
+.sMain2 {
+    display: flex;
+
+}
+
+.nMember {
+    display: inline;
+    margin-top: 23.13px;
+    text-align: right;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD;
+    font-size: 15px;
+}
+
+.fRegister {
+    margin-top: 23.13px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 700px){
+
+    .main{
+        display:grid
+    }
+    .hero{
+        width: 100%;
+       
+        margin: 20px;
+        
+    }
+    .left{
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    .right{
+        margin-left: 15px;
+        width: 100%;
+        justify-content: center;
+        
+    }
+    
+}
+@media screen and (min-width: 701px){
+    .hero{
+       
+    }
+}

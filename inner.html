@@ -17,6 +17,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    <script defer>
+        function menudisplay() {
+            var x = document.getElementById("main-menu-toggle");
+            var y = document.getElementById("rDown");
+            console.log(y);
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.maxWidth = "84.48%";
+
+            } else {
+                x.style.display = "none";
+                y.style.maxWidth = "100%";
+            }
+
+
+        }
+
+    </script>
 
 </head>
 
@@ -25,7 +44,7 @@
     <div class="container2 main">
         <div class="row nav">
             <div class="col firstPart d-flex ">
-                <img class="menu" src="./images/menu-bar.svg">
+                <img class="menu" src="./images/menu-bar.svg" onclick="menudisplay()">
                 <img class="cLogo" src="./images/logo.svg">
             </div>
             <div class="col secondPart d-flex ">
@@ -41,7 +60,7 @@
         </div>
         <div class="row d-flex flex-row">
 
-            <div class="menu2">
+            <div class="menu2" id="main-menu-toggle">
                 <div class="row left">
                     <a href="#" class="menuOption d-flex text-center activeBack">
                         <img class="sidebarMenu d-flex " src="./images/dashboard-active.svg" alt="Dashboard">
@@ -85,7 +104,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rDown">
+            <div class="rDown" id="rDown">
                 <div class="row">
                     <p class="dTitle">Analysis</p>
                 </div>
@@ -100,7 +119,7 @@
                         <option class="firstDropDown" value="dropdown">Dropdown</option>
                     </select>
 
-                    <textarea class="oneColumn multiLine" name="message" rows="3" cols="30">Multiple line</textarea>
+                    <textarea class="oneColumn multiLine" name="message" rows="3">Multiple line</textarea>
 
                     <p class="column column2">Two Column</p>
 
@@ -173,11 +192,97 @@
 
                     <div class="d-flex">
                         <p class="red">Enter Valid data</p>
-                        <p class="red">Enter your full Name as per ID</p>
+                        <p class="grey">Enter your full Name as per ID</p>
                     </div>
 
                     <p class="column other-element">Other Design Elements</p>
 
+                    <p class="other-elements-common">File Upload</p>
+                    <div class="d-flex flex-row upload-main">
+                        <div class="upload d-flex flex-col">
+                            <img class="upload-image" src="./images/cloud-upload-icon.svg" alt="">
+                            <p class="red-upload">Upload</p>
+                        </div>
+                        <p class="upload-text">No item Selected</p>
+                    </div>
+
+                    <p class="other-elements-common">Radio Button</p>
+                    <div class="d-flex flex-row radio-main">
+                        <div class="first-radio">
+                            <input class="radio-button" type="radio">
+                            <label title="Option 1" class="radio-label">Option 1</label>
+                        </div>
+
+                        <div class="second-radio">
+                            <input class="radio-button" type="radio" checked="checked">
+                            <label title="Option 2" class="radio-label">Option 2</label>
+                        </div>
+                    </div>
+
+                    <p class="other-elements-common">Checkbox</p>
+                    <div class="d-flex flex-row check-main">
+                        <div class="first-check">
+                            <input class="checkbox" type="checkbox">
+                            <label title="Option 1" class="check-label">Option 1</label>
+                        </div>
+
+                        <div class="second-check">
+                            <input class="checkbox" type="checkbox" checked="checked">
+                            <label title="Option 2" class="check-label">Option 2</label>
+                        </div>
+                    </div>
+                    <p class="other-elements-common">Snackbar</p>
+
+                    <div class="d-flex flex-row snack-part">
+                        <div class="d-flex flex-row error">
+                            <img src="./images/error-icon.svg" alt="" class="snackbar-image">
+                            <p class="error-message">This is an error Message</p>
+                        </div>
+                        <div class="d-flex flex-row info">
+                            <img src="./images/info-icon.svg" alt="" class="snackbar-image">
+                            <p class="info-message">This is an information message</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row snack-part s2">
+                        <div class="d-flex flex-row warn">
+                            <img src="./images/warning-icon.svg" alt="" class="snackbar-image">
+                            <p class="warn-message">This is an warning message</p>
+                        </div>
+                        <div class="d-flex flex-row success">
+                            <img src="./images/success-icon.svg" alt="" class="snackbar-image">
+                            <p class="success-message">This is an Success message</p>
+                        </div>
+                    </div>
+
+                    <p class="other-elements-common">Call to action</p>
+
+                    <div class="d-flex button">
+                        <div class="red-btn">
+                            <p class="white-text">Primary</p>
+                        </div>
+                        <div class="white-btn">
+                            <p class="red-text">Secondary</p>
+                        </div>
+                    </div>
+
+                    <p class="other-elements-common">Tabs</p>
+
+                    <div class="tab-main d-flex">
+                        <div class="red-bordered">
+                            <p class=" tab-red">Tab 1</p>
+                        </div>
+                        <p class="tab-text">Tab 2</p>
+                        <p class="tab-text">Tab 3</p>
+                    </div>
+
+                    <hr class="horizontal-line">
+
+                    <p class="paragraph">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                        printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                        only five centuries, but also the leap into electronic typesetting, remaining essentially
+                        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
+                    </p>
 
                 </div>
 
@@ -185,3 +290,11 @@
 
 
             </div>
+
+
+
+
+        </div>
+</body>
+
+</html>
