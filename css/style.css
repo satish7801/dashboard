@@ -139,8 +139,8 @@ a:focus > .sidebarMenu {
 
 .rDown {
   max-width: 84.48%;
-  background: #1d1a1a 0% 0% no-repeat padding-box;
-  /* background: #fafafa 0% 0% no-repeat padding-box; */
+  /* background: #1d1a1a 0% 0% no-repeat padding-box; */
+  background: #fafafa 0% 0% no-repeat padding-box;
   padding: 0px;
 }
 .dTitle {
