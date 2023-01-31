@@ -14,21 +14,23 @@
 .nav {
   height: 80px;
   width: 100%;
+  margin: 0px;
 }
 
 .firstPart {
-  max-width: 17%;
+  max-width: 242px;
   padding: 0px;
 }
 
 .secondPart {
-  max-width: 66%;
+  max-width: 1043px;
   padding: 0px;
 }
 
 
 .thirdPart {
-  max-width: 17%;
+  justify-content: flex-end;
+  max-width: 275px;
   padding: 0px;
 }
 .menu {
@@ -83,7 +85,7 @@
   margin-top: 20px;
 }
 .menu2 {
-  width: 242px;
+  max-width: 15.52%;
 }
 
 .left > a {
@@ -135,9 +137,10 @@
   color: red;
 }
 .rDown {
-  width: 83%;
+  max-width: 84.48%;
   background: #fafafa 0% 0% no-repeat padding-box;
   padding: 0px;
+
 }
 .dTitle {
   margin-top: 15px;
@@ -357,4 +360,10 @@
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+@media screen and (max-width:820) {
+  .menu2{}
+  
+  
 }

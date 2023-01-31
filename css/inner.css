@@ -40,7 +40,8 @@
 }
 
 .oneColumn {
-  width: 1122px;
+  min-width: 95%;
+  max-width: 1157px;
   margin-top: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -53,14 +54,17 @@
 }
 
 .two-column-row {
-  width: 1122px;
   margin-left: 30.5px;
+  margin-right: 30.5px;
+  max-width: 95%;
+  justify-content: space-between;
 }
 
 .firstDropDown {
   color: #adadad;
 }
 .fUName {
+  
   color: #adadad;
 }
 
@@ -72,11 +76,12 @@
   margin-bottom: 16px;
 }
 .two-column-left {
-  width: 561px;
-  padding-right: 30px;
+  max-width: 561px;
+  min-width: 48%;
 }
 .two-column-right {
-  width: 561px;
+  max-width: 561px;
+  min-width: 48%;
 }
 
 .twoColumn {
@@ -98,16 +103,20 @@
   margin-bottom: 17.98px;
 }
 .three-column-row {
-  width: 1122px;
+  max-width: 95%;
   height: 59px;
   margin-left: 30.5px;
+  margin-right: 30.5px;
+  justify-content: space-between;
 }
 .three-column-right {
-  width: 364px;
+  max-width: 364px;
+  min-width: 31.46%;
 }
 .three-column-left {
-  width: 364px;
+  max-width: 364px;
   margin-left: 31px;
+  min-width: 31.46%;
 }
 .did-floating-label2 {
   font-size: 13px;
@@ -138,39 +147,287 @@
   margin-bottom: 19.98px;
 }
 .four-column-row {
-  width: 1122px;
+  max-width: 95%;
   height: 59px;
   margin-left: 30.5px;
 }
 .fourColumn {
-    width: 100%;
+  width: 100%;
   border: 1px solid #adadad;
   border-radius: 5px;
   height: 47px;
 }
-.four-column-right{
-    width: 266px;
-    margin-left: 31px;
+.four-column-right {
+  max-width: 266px;
+  margin-left: 31px;
+  min-width: 22.99%;
 }
-.four-column-left{
-    width: 266px;
+.four-column-left {
+  max-width: 266px;
+  min-width: 22.99%;
 }
-.l3{
-    top: -8px; 
+.l3 {
+  top: -8px;
 }
-.l3-red{
-    color: red;
+.l3-red {
+  color: red;
 }
-.red{
-    font: normal normal normal 12px/16px Roboto;
-letter-spacing: 0px;
-color: #FF3B3B;
+.red {
+  font: normal normal normal 12px/16px Roboto;
+  letter-spacing: 0px;
+  color: #ff3b3b;
+  margin-left: 44px;
+  margin-right: 211px;
 }
-.red-border{
-    border: 1px solid #FF3C3C;
-    border-radius: 5px;
+
+.grey {
+  text-align: left;
+  font: normal normal normal 12px/16px Roboto;
+  letter-spacing: 0px;
+  color: #adadad;
+}
+.red-border {
+  border: 1px solid #ff3c3c;
+  border-radius: 5px;
 }
 .other-element {
-    margin-top: 47px;
-    margin-bottom: 19.98px;
-  }
+  margin-top: 47px;
+  margin-bottom: 19.98px;
+}
+.other-elements-common {
+  text-align: left;
+  font: 18px/24px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  margin-left: 29px;
+}
+.upload-main {
+  margin-left: 29.5px;
+  margin-bottom: 36.15px;
+}
+.upload {
+  border: 1px solid #c8242f;
+  border-radius: 18px;
+  width: 124px;
+  height: 36px;
+  padding: 5px;
+}
+.upload-image {
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.red-upload {
+  color: #c8242f;
+  margin-left: 10px;
+}
+.upload-text {
+  text-align: left;
+  font: normal normal normal 12px/16px Roboto;
+  letter-spacing: 0px;
+  color: #adadad;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 19.5px;
+}
+.radio-main {
+  margin-left: 30.42px;
+  height: 25px;
+  margin-bottom: 32px;
+}
+.first-radio {
+}
+.second-radio {
+  margin-left: 42.75px;
+}
+
+.radio-button {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.radio-label {
+  margin-right: 9.42px;
+}
+.second-radio input[type="radio"] {
+  accent-color: red;
+}
+.check-main {
+  margin-left: 29px;
+  height: 25px;
+  margin-bottom: 34.52px;
+}
+.first-check {
+}
+.second-check {
+  margin-left: 42.75px;
+}
+
+.checkbox {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.check-label {
+  margin-right: 9.42px;
+}
+.second-check input[type="checkbox"] {
+  accent-color: red;
+}
+
+.snack-main {
+  margin-left: 30.5px;
+}
+.snack-part {
+  margin-left: 28.5px;
+  max-width: 95%;
+  justify-content: space-between;
+}
+
+.s2 {
+  margin-top: 25px;
+  margin-bottom: 34.15px;
+}
+.snackbar-image {
+  width: 20px;
+  height: 20px;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.error {
+  max-width: 563px;
+  height: 44px;
+  border: 1px solid #ff3535;
+  border-radius: 5px;
+  min-width: 48.66%;
+}
+.error-message {
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: 15px;
+  color: #ff3535;
+}
+.info {
+  max-width: 563px;
+  height: 44px;
+  border: 1px solid #00b9e1;
+  border-radius: 5px;
+  min-width: 48.66%;
+}
+.info-message {
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: 15px;
+  color: #00b9e1;
+}
+.warn {
+  max-width: 563px;
+  height: 44px;
+  border: 1px solid #ffa800;
+  border-radius: 5px;
+  min-width: 48.66%;
+}
+.warn-message {
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: 15px;
+  color: #ffa800;
+}
+.success {
+  max-width: 563px;
+  height: 44px;
+  border: 1px solid #00af27;
+  border-radius: 5px;
+  min-width: 48.66%;
+}
+.success-message {
+  margin-bottom: auto;
+  margin-top: auto;
+  font-size: 15px;
+  color: #00af27;
+}
+
+/* call to action */
+
+.button {
+  margin-bottom: 34.65px;
+}
+
+.red-btn {
+  width: 124px;
+  height: 45px;
+  background: #c8242f 0% 0% no-repeat padding-box;
+  border-radius: 23px;
+  margin-left: 30px;
+  padding-top: 10px;
+}
+.white-text {
+  text-align: center;
+  font: normal 18px/24px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.white-btn {
+  width: 145px;
+  height: 44px;
+  border: 1px solid #c8242f;
+  border-radius: 22px;
+  margin-left: 20.5px;
+}
+
+.red-text {
+  text-align: center;
+  font: normal 18px/24px Roboto;
+  letter-spacing: 0px;
+  color: #c8242f;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.tab-main {
+  margin-left: 30px;
+}
+.red-bordered {
+  width: 69px;
+  margin-right: 19px;
+}
+.tab-text {
+  text-align: left;
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 0px;
+  color: #adadad;
+  margin-right: 39px;
+}
+
+.tab-red {
+  color: #c8242f;
+  padding-bottom: 13.37px;
+  border-bottom: 3px solid #c8242f;
+  text-align: center;
+  font: normal normal normal 15px/20px Roboto;
+  letter-spacing: 0px;
+}
+
+.horizontal-line {
+  margin-left: 30px;
+  margin-right: 30px;
+  top: -33px;
+  position: relative;
+  
+}
+.paragraph {
+  margin-top: -10px;
+  text-align: left;
+  font: normal normal normal 15px/24px Roboto;
+  letter-spacing: 0px;
+  color: #3e3e3e;
+  max-width: 1119px;
+  margin-left: 30px;
+}
+
+

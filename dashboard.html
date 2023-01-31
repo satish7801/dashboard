@@ -8,6 +8,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    
+
+    <script defer>
+        function menudisplay() {
+            var x = document.getElementById("main-menu-toggle");
+            var y = document.getElementById("rDown");
+            console.log(y);
+
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.maxWidth = "84.48%";
+
+            } else {
+                x.style.display = "none";
+                y.style.maxWidth = "100%";
+            }
+
+
+        }
+
+    </script>
 
     <form>
 
@@ -18,7 +39,7 @@
     <div class="container2 main">
         <div class="row nav">
             <div class="col firstPart d-flex ">
-                <img class="menu" src="./images/menu-bar.svg">
+                <img class="menu" src="./images/menu-bar.svg" onclick="menudisplay()">
                 <img class="cLogo" src="./images/logo.svg">
             </div>
             <div class="col sSecondPart d-flex ">
@@ -34,7 +55,7 @@
         </div>
         <div class="row d-flex flex-row">
 
-            <div class="menu2">
+            <div class="menu2" id="main-menu-toggle">
                 <div class="row left">
                     <a href="#" class="menuOption d-flex text-center activeBack">
                         <img class="sidebarMenu d-flex " src="./images/dashboard-active.svg" alt="Dashboard">
@@ -78,7 +99,7 @@
                     </a>
                 </div>
             </div>
-            <div class="rDown">
+            <div class="rDown" id="rDown">
                 <div class="row">
                     <p class="dTitle">Dashboard</p>
 
