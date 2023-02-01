@@ -35,18 +35,32 @@
 
         }
 
+        function headerchange() {
+            var x = document.getElementsByClassName("nav");
+            console.log(x.style.width);
+            // if(x.style.width <= 650){
+
+            // }
+        }
+
+
+
     </script>
 
 </head>
 
 <body>
 
-    <div class="container2 main">
-        <div class="row nav">
-            <div class="col firstPart d-flex ">
+    <div class="container2 main overflow-hidden">
+        <div class="row nav" onchange="headerchange()">
+            <!-- <div class="col firstPart d-flex ">
                 <img class="menu" src="./images/menu-bar.svg" onclick="menudisplay()">
                 <img class="cLogo" src="./images/logo.svg">
-            </div>
+            </div> -->
+            <div class="col firstPart d-flex ">
+                <div class="menu" onclick="menudisplay()" ></div>
+                <div class="cLogo"></div>
+            </div> 
             <div class="col secondPart d-flex ">
                 <img class="cSearch" src="./assets2/search.png">
                 <span class="sTitle2"> Search</span>
