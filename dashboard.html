@@ -36,11 +36,11 @@
 
 <body>
 
-    <div class="container2 main overflow-hidden">
+    <div class="container2 main ">
         <div class="row nav">
             <div class="col firstPart d-flex ">
-                <img class="menu" src="./images/menu-bar.svg" onclick="menudisplay()">
-                <img class="cLogo" src="./images/logo.svg">
+                <div class="menu" onclick="menudisplay()" ></div>
+                <div class="cLogo"></div>
             </div>
             <div class="col sSecondPart d-flex ">
                 <img class="cSearch" src="./assets2/search.png">
@@ -53,7 +53,7 @@
                     <img class="cArraw" src="./images/downward-arrow.svg">
             </div>
         </div>
-        <div class="row d-flex flex-row">
+        <div class="row d-flex second-row">
 
             <div class="menu2" id="main-menu-toggle">
                 <div class="row left">
@@ -104,7 +104,7 @@
                     <p class="dTitle">Dashboard</p>
 
                 </div>
-                <div class="d-flex dRow">
+                <div class="d-flex dRow flex-wrap">
                     <div class=" card d-flex flex-row flex-wrap">
                         <img class="cIcon" src="./images/star.svg" alt="">
                         <div class="rightCard">
@@ -184,7 +184,7 @@
                     <span class="saleTitle invoice">Invoices</span>
                     <span class="view ">View All</span>
                 </div>
-                <table class="invoiceTable overflow-hidden">
+                <table class="invoiceTable overflow-scroll">
                     <tr>
                         <th class="tableTitle">INVOICE</th>
                         <th class="tableTitle">COMPANY NAME</th>

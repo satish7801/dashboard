@@ -159,6 +159,7 @@ a:focus > .sidebarMenu {
   font-style: bold;
 }
 .dRow {
+
   justify-content: space-evenly;
 }
 .leftCard {
@@ -270,6 +271,9 @@ a:focus > .sidebarMenu {
 }
 
 .cBox {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
   margin-left: 49px;
   margin-top: 27px;
   max-width: 385px;
@@ -280,7 +284,7 @@ a:focus > .sidebarMenu {
 }
 
 .first-country {
-  max-width: 130px;
+  /* max-width: 130px; */
 }
 
 .dot1 {
@@ -340,6 +344,16 @@ a:focus > .sidebarMenu {
   font: 15px Roboto;
   letter-spacing: 1.5px;
   color: #adadad;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.tableData{
+  text-align: left;
+font: normal normal normal 15px/20px Roboto;
+letter-spacing: 0px;
+color: #3E3E3E;
 }
 
 .status {
@@ -406,17 +420,26 @@ a:focus > .sidebarMenu {
   }
   
 }
+
+@media screen and (max-width:1220px){
+    .card{
+      margin-bottom: 20px;
+
+    }
+  
+}
 @media screen and (max-width: 1120px) {
   .graphImg {
     width: 700px;
     height: 300px;
   }
   .dataGraph{
-    max-width: 802px;
+    margin-right: 20px;
+    max-width: 90%;
   }
   .pieContainer{
     margin-top: 20px;
-    max-width: 800px;
+    max-width: 90%;
   }
   .pie-part{
     flex-direction: row;
@@ -430,6 +453,21 @@ a:focus > .sidebarMenu {
   
 }
 
+@media screen and (max-width: 850px) {
+  .menu2{
+    max-width: 60px;
+     }
+     .sidebarTitle{
+      display: none;
+     }
+
+     .graphImg{
+      width: 600px;
+      height: 250px;
+     }
+  
+}
+
 @media screen and (max-width: 786px) {
   .cLogo{
     background-image: url("../images/mobile-header-logo.svg");
@@ -440,6 +478,11 @@ a:focus > .sidebarMenu {
 
   .sidebarTitle{
     display: none;
+  }
+  .second-row{
+    flex-direction: row;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
   .menu2{
@@ -470,18 +513,107 @@ a:focus > .sidebarMenu {
   .oneColumn{
     margin-left: 10px;
   }
-  .two-column-row{
-    margin-left: 10px;
+  .invoiceTable{
+    width: 100vw;
+    display: block;
   }
-  .three-column-row{
-    margin-left: 10px;
+
+  .graphImg{
+    max-width: 630px;
+    height: 275;
   }
-  .four-column-row{
-    margin-left: 10px;
+ 
+}
+
+@media screen and (max-width: 760px) {
+  .menu2{
+    display:none;
+  }
+  .sidebarTitle{
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width:670px) {
+  .graphImg{
+    
+    max-width: 480px;
+    max-height: 220px;
+
+  }
+  .menu2{
+    display:none;
+  }
+  .sidebarTitle{
+    display: none;
+  }
+  .rDown{
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:460px){
+  .uName{
+
+    display: none;
   }
 }
 
-/* @media screen and  {
+@media screen and  (max-width:360px){
   
-} */
+  .nav{
+    height: 50px;
+  }
+  
+
+  .cBell{
+    height: 15px;
+    width: 15px;
+  }
+  .cUser{
+    width: 30px;
+    height: 30px;
+  }
+  .cArraw{
+    display: none;
+  }
+  
+  
+  .uName{
+    display: none;
+  }
+
+  .second-row{
+    flex-direction: column;
+  }
+  .menu2{
+    width: 100%;
+    display: flex;
+  }
+  
+  .menuOption{
+    max-width: 85px;
+  }
+  .graphImg{
+    max-width: 350px;
+    max-height: 150px;
+    margin-left: -10px;
+    
+  }
+  .dataGraph{
+    max-width: 95%;
+  }
+  .pieContainer{
+    max-width:95%;
+
+  }
+  .pie-part{
+    flex-direction: column;
+  }
+  .invoiceTable{
+    width: 100vw;
+    display: block;
+  }
+  
+}
 
